@@ -1,0 +1,9 @@
+tensorflow
+keras>=3.0.0
+requests
+flask
+protobuf
+selenium
+
+
+
