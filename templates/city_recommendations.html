@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Restaurant Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/restaurant_styles.css') }}">
+</head>
+<body>
+    <div class="restaurant-container">
+        <h1>Indulge in our Exquisite Favorites in {{ city.capitalize() }}</h1>
+        <div class="restaurant-grid">
+            {% for restaurant in recommendations %}
+            <a href="{{ restaurant.url }}" target="_blank" class="restaurant-link"> <!-- Link to restaurant website -->
+            <div class="restaurant-card">
+                <img src="{{ url_for('static', filename='images/' + restaurant.image) }}" alt="{{ restaurant.name }}" class="restaurant-img">
+                <h2>{{ restaurant.name }}</h2>
+                <p>{{ restaurant.description }}</p>
+                <div class="price-rating">
+                    <span>{{ restaurant.price }}</span>
+                    <span>{{ restaurant.rating }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

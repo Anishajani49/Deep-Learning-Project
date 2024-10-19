@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Recommendation System</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/restaurant_styles.css') }}">
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Paris Button with Background Image -->
+        <button class="city paris" onclick="goToRestaurants('paris')">
+            <h2>Paris</h2>
+        </button>
+    
+        <!-- Mumbai Button with Background Image -->
+        <button class="city mumbai" onclick="goToRestaurants('mumbai')">
+            <h2>Mumbai</h2>
+        </button>
+    
+        <!-- London Button with Background Image -->
+        <button class="city london" onclick="goToRestaurants('london')">
+            <h2>London</h2>
+        </button>
+    
+        <!-- New York Button with Background Image -->
+        <button class="city newyork" onclick="goToRestaurants('newyork')">
+            <h2>New York</h2>
+        </button>
+    </div>
+    
+    <div id="recommendations"></div> <!-- Section to display the recommendations -->
+</body>
+</html>
