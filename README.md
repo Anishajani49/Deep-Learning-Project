@@ -1,1 +1,2 @@
-# Deep-Learning-Project
+# Restaurant Recommendation System
+## Developed an innovative restaurant recommendation system leveraging user-generated content from YouTube to provide personalized dining suggestions. This project was motivated by the growing availability of authentic, user-uploaded information on social media platforms, which offers a richer and more dynamic source of insights compared to traditional methods based solely on ratings and comments.
